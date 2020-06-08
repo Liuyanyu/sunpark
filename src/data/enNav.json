@@ -1,0 +1,104 @@
+{
+    "data": [
+        {
+            "name": "STRATEGY",
+            "path": "/en/raiders",
+            "icon": "huodongzhinan",
+            "navImage": "@assets/nb3.jpg",
+            "navImage": "@assets/nb3.jpg",
+            "children": [
+                {
+                    "name": "TIME",
+                    "path": "/en/raiders/openTime"
+                },
+                {
+                    "name": "RECOMMEND",
+                    "path": "/en/raiders/recommend"
+                },
+                {
+                    "name": "ATTRACTIONS",
+                    "path": "/en/raiders/attractions"
+                },
+                {
+                    "name": "TRAFFIC",
+                    "path": "/en/raiders/traffic"
+                },
+                {
+                    "name": "STALLS",
+                    "path": "/en/raiders/stalls"
+                }
+                
+            ]
+        },
+        {
+            "name": "GUEST SERVICES",
+            "path": "/en/service",
+            "icon": "youkezixun",
+            "desc": "游客服务游客服务游客服务游客服务游客服务游客服务",
+            "navImage": "@assets/nb4.jpg",
+            "children": [
+                {
+                    "name": "LOCATION",
+                    "path": "/en/service/location"
+                },
+                {
+                    "name": "ADMISSION NOTICE",
+                    "path": "/en/service/notice"
+                },
+                {
+                    "name": "DOORAREA",
+                    "path": "/en/service/doorArea"
+                },
+                {
+                    "name": "SERVICE TELEPHONE",
+                    "path": "/en/service/tel"
+                },
+                {
+                    "name": "PARKING INFORMATION",
+                    "path": "/en/service/parking"
+                },
+                {
+                    "name": "PERIPHERAL SERVICES",
+                    "path": "/en/service/periphery"
+                },
+                {
+                    "name": "CLINIC INFORMATION",
+                    "path": "/en/service/infirmary"
+                }
+            ]
+        },
+        {
+            "name": "ABOUT US",
+            "path": "/en/ours",
+            "icon": "women",
+            "desc": "关于关于关于关于关于关于关于关于关于关于",
+            "navImage": "@assets/nb5.jpg",
+            "children": [
+                {
+                    "name": "PARK INTRODUCTION",
+                    "path": "/en/ours/introduction"
+                },
+                {
+                    "name": "TALENT RECRUITMENT",
+                    "path": "/en/ours/jobs"
+                },
+                {
+                    "name": "TALENT RECRUITMENT",
+                    "path": "/en/ours/cooperation"
+                },
+                {
+                    "name": "PARK INTRODUCTION",
+                    "path": "/en/ours/share"
+                },
+                {
+                    "name": "FRIENDSHIP LINK",
+                    "path": "/en/ours/friends"
+                },
+                {
+                    "name": "CONTACT US",
+                    "path": "/en/ours/contact"
+                }
+            ]
+        }
+    ]
+}

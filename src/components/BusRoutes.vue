@@ -1,0 +1,80 @@
+<template>
+    <div class="bus-line">
+        <ul class="list-unstyled" :style="{width: (routes.length*36) + 'px'}">
+            <li v-for="(item, index) in routes" :class="{'active': item.active}">{{item.name}}</li>
+        </ul>
+        <span class="dashed" :style="'min-width:' + routes.length*36 + 'px'"></span>
+    </div>
+</template>
+
+<script>
+export default {
+    props: ['routes'],
+    data() {
+        return {
+            
+        }
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+.dashed{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    // right: 0;
+    width: 100%;
+    height: 0;
+    border-top: 1px dashed #168c74;
+}
+
+.bus-line {
+    min-height:160px;
+    position: relative;
+    clear: both;
+    text-align: center;
+    overflow-x: auto;
+    &::after {
+        // position: absolute;
+        // left: 0;
+        // top: 20px;
+        // right: 0;
+        // height: 0;
+        // border-top: 1px dashed #168c74;
+        // content: ''
+    }
+    &>ul {
+        margin: 20px auto;
+        // border-top: 1px dashed #168c74;
+        &>li {
+            word-break:break-all;
+            padding-top: 15px;
+            display: inline-block;
+            vertical-align: top;
+            width: 20px; // line-height: 20px;
+            margin: 0 8px;
+            position: relative;
+            &::after {
+                position: absolute;
+                left: 6px;
+                top: -2px;
+                content: '';
+                height: 6px;
+                width: 6px;
+                background: #168c74;
+                border-radius: 50%
+            }
+            &.active {
+                color: #168c74;
+                &::after {
+                    width: 14px;
+                    height: 14px;
+                    top: -6px;
+                    left: 2px;
+                }
+            }
+        }
+    }
+}
+</style>
